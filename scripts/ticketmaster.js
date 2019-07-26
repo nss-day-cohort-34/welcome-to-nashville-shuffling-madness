@@ -66,13 +66,9 @@ const renderToDOM = (HTMLString) => {
 
 
 
-const clear = document.querySelector("#clear")
+
 document.querySelector("#ticketmasterButton").addEventListener("click", () => {
-   whereToPostToDOM.removeChild(clear)
-
-
-
-    const buttonValue = document.querySelector("#ticketmasterInput")
+   const buttonValue = document.querySelector("#ticketmasterInput")
     console.log(buttonValue.value)
     ticketmasterFetch(buttonValue.value) 
     
