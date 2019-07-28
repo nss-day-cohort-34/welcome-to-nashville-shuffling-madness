@@ -24,7 +24,7 @@ const ticketmasterFetch = (search) => {
 // ticketmasterFetch("Rock")
 // console.log(ticketmasterFetch("Rock"))
 
-const whereToPostToDOM = document.querySelector("#listContainer")
+const whereToPostToDOM = document.querySelector("#listContainer__ticket")
 
 const ticketmasterHTML = (eventName) => {
     return `
@@ -53,7 +53,7 @@ const ticketmasterHTML = (eventName) => {
 // const zomatoHTML = (zomatoItem) => {
 //     return `
 //     <ol>
-//         <ul>${}<button>Save</button></ul>
+//         <ul>${zomatoItem}<button>Save</button></ul>
 //     </ol>    
 //     `
 // }
@@ -61,7 +61,7 @@ const ticketmasterHTML = (eventName) => {
 const renderToDOM = (HTMLString) => {
     
    
-    whereToPostToDOM.innerHTML += HTMLString
+     whereToPostToDOM.innerHTML += HTMLString
 }
 
 
