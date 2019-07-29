@@ -18,9 +18,7 @@ const zomatoFetchCuisineId = (cuisineEntered) => {
                 let currentCuisineID = results.cuisines[i].cuisine.cuisine_id
                 let restaurantID = ""
                 if (cuisineEntered === currentCuisineName) {
-                    // console.log(`${currentCuisineID}`)
                     restaurantID = currentCuisineID
-                    // return `${currentCuisineID}`
                 }
                 fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&cuisines=${restaurantID}`, {
                     headers: {
@@ -31,11 +29,8 @@ const zomatoFetchCuisineId = (cuisineEntered) => {
                     .then(data => data.json())
                     .then((results) => {
                         if (results.results_found < 3760) {
-                            // console.log(results)
                             for (let i = 0; i < results.restaurants.length; i++) {
                                 let restaurantName = results.restaurants[i].restaurant.name
-                                // let restaurantRating = results.results_found[i].restaurant.user_rating.aggregate_rating
-                                // console.log(restaurantName)
                                 const toHTML = zomatoHTML(restaurantName)
                                 renderToDOMZomato(toHTML)
                             }
@@ -47,10 +42,7 @@ const zomatoFetchCuisineId = (cuisineEntered) => {
 
 
 
-// console.log(zomatoFetchCuisineId("African"))
-// zomatoFetchRestaurant()
-// console.log(fetchedID)
-// console.log(taco)
+
 
 
 document.querySelector("#zomatoButton").addEventListener("click", () => {
@@ -65,8 +57,6 @@ document.querySelector("#zomatoButton").addEventListener("click", () => {
 })
 const zomatoToDom = document.querySelector("#listContainer__zomato")
 const renderToDOMZomato = (HTMLString) => {
-    
-   
     zomatoToDom.innerHTML += HTMLString
 }
 let listCounter = 0

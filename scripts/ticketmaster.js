@@ -68,6 +68,10 @@ const renderToDOM = (HTMLString) => {
 
 
 document.querySelector("#ticketmasterButton").addEventListener("click", () => {
+    while (whereToPostToDOM.hasChildNodes()) {
+        whereToPostToDOM.removeChild(whereToPostToDOM.firstChild)
+        // listCounter = 0
+    }
    const buttonValue = document.querySelector("#ticketmasterInput")
     console.log(buttonValue.value)
     ticketmasterFetch(buttonValue.value) 
