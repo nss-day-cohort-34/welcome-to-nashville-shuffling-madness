@@ -1,0 +1,17 @@
+.domList {
+    list-style-type: none;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.listContainer {
+    overflow: scroll;
+    border: solid black 1px;
+    flex-basis: 20%;
+    height: 300px;
+}

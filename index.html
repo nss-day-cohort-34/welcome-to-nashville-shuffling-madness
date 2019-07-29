@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Nashville Software School</title>
@@ -16,36 +17,48 @@
 
   <article class="search">
     <h2>Search for stuff to do today</h2>
-      <section>
-        <input id="ticketmasterInput" type="text">
-        <button id="ticketmasterButton">Search</button>
-      </section>
-      <section>
-        <input id="parksInput" type="text">
-        <button id="parksButton">Search</button>
-      </section>
-      <section>
-        <input id="zomatoInput" type="text">
-        <button id="zomatoButton">Search</button>
-      </section>
-      <section>
-        <input id="eventbriteInput" type="text">
-        <button id="eventbriteButton">Search</button>
-      </section>
-    </article>
+    <section>
+      <input id="ticketmasterInput" type="text">
+      <button id="ticketmasterButton">Search</button>
+    </section>
+    <section>
+      <input id="parksInput" type="text">
+      <button id="parksButton">Search</button>
+    </section>
+    <section>
+      <input id="zomatoInput" type="text">
+      <button id="zomatoButton">Search</button>
+    </section>
+    <section>
+      <input id="eventbriteInput" type="text">
+      <button id="eventbriteButton">Search</button>
+    </section>
+  </article>
 
-    <article id="listContainer">
-      <h2>Results</h2>
+  <article>
+    <h2>Results</h2>
+    <section class="flex">
+      <div id="listContainer__ticket" class="listContainer">
+      </div>
+      <div id="listContainer__parks" class="listContainer">
+      </div>
+      <div id="listContainer__zomato" class="listContainer">
+      </div>
+      <div id="listContainer__event" class="listContainer">
+      </div>
+      </section>
 
-    </article>
+  </article>
 
-    <article>
-      <h2>My Itinerary</h2>
-    </article>
+  <article>
+    <h2>My Itinerary</h2>
+  </article>
 
   <footer></footer>
 
   <script src="./scripts/ticketmaster.js"></script>
   <script src="./scripts/main.js"></script>
+  <script src="./scripts/zomato.js"></script>
 </body>
+
 </html>
