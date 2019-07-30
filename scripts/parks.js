@@ -65,11 +65,3 @@ const GetParkSearchPropertyFromInput = (searchInput) => {
 // const parksContainer = document.querySelector("#listContainer__parks")
 
 
-document.querySelector(".flex").addEventListener("click", (event) => {
-    if (event.target.id.split("--")[0] === "save") {
-        const id = event.target.id.split("--")[1]
-        const string = `#card--${id}`
-        const newID = document.querySelector(string)
-        
-    }
-})

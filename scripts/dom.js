@@ -39,3 +39,23 @@ const zomatoToDom = document.querySelector("#listContainer__zomato")
 const renderToDOMZomato = (HTMLString) => {
     zomatoToDom.innerHTML += HTMLString
 }
+
+const zomatoToItin = document.querySelector("#itinContainer--zomato")
+const renderZomatoItin = (string) => {
+  zomatoToItin.innerHTML = string
+}
+
+const ticketToItin = document.querySelector("#itinContainer--ticket")
+const renderTicketItin = (string) => {
+  ticketToItin.innerHTML = string
+}
+
+const parkToItin = document.querySelector("#itinContainer--parks")
+const renderParkstItin = (string) => {
+  parkToItin.innerHTML = string
+}
+
+const eventToItin = document.querySelector("#itinContainer--event")
+const renderEventItin = (string) => {
+  eventToItin.innerHTML = string
+}
