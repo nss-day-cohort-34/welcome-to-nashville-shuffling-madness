@@ -24,6 +24,10 @@ document.querySelector("#ticketmasterButton").addEventListener("click", () => {
 
 //call parks
 document.querySelector("#parksButton").addEventListener("click", () => {
+    while (parksContainer.hasChildNodes()) {
+        parksContainer.removeChild(parksContainer.firstChild)
+        listCounter = 0
+    }
     const buttonValue = document.querySelector("#parksInput")
     metroFetch(buttonValue.value)
     listCounter = 0
