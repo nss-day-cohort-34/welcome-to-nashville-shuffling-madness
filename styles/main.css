@@ -1,4 +1,8 @@
-
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+body {
+    background-image: url("https://files.slack.com/files-pri/T03F2SDTJ-FLVGHR7NC/image.png");
+}
 
 .flex {
     display: flex;
@@ -12,3 +16,23 @@
     flex-basis: 20%;
     height: 300px;
 }
+
+.welcome {
+text-align: center;
+font-size: 90px;
+font-family: 'Titillium Web', sans-serif;
+}
+
+.nashville{
+color: #FF1919;
+font-size: 75px;
+-webkit-transform: rotate(-15deg);
+margin-left: 345px;
+text-align: center;
+margin-top: -125px;
+font-family: 'Mr Dafoe', cursive;
+-webkit-text-stroke: 1px #E91F1F  ;
+-webkit-filter: drop-shadow(2px 2px 20px #E91F1F);
+
+}
+
